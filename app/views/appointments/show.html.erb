@@ -1,0 +1,7 @@
+<h1><%= @appointment.appointment_time %></h1>
+<p>The doctor for this appointment is:
+  <%= link_to @appointment.doctor.name, @appointment.doctor %>
+</p>
+<p>This appointment is for
+  <%= link_to @appointment.patient.name, @appointment.patient %>
+</p>
